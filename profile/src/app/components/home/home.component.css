@@ -1,0 +1,208 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh; /* Video height adjusted to fit remaining viewport */
+    overflow: hidden;
+    position: relative;
+    margin-bottom:120px;
+
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-section .text-center {
+    z-index: 1;
+} 
+
+
+/* Container for the heading and lines */
+.heading-wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Style for the lines */
+.line {
+    flex: 1; /* Let the lines take up remaining space */
+    height: 4px;
+    background-color: red; /* Red color for the lines */
+    margin: 0 20px; /* Space between the lines and the heading */
+}
+
+/* Style for the heading */
+.section-heading {
+    margin: 0; /* Remove any default margins */
+    font-size: 2rem; /* Adjust the font size */
+}
+
+
+/* Styling for the company overview section */
+.company-overview {
+    padding: 40px 0;
+}
+
+/* Styling for the image container */
+.image-container {
+    text-align: center; /* Centers the image */
+}
+
+.company-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Styling for the text content */
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333; /* Dark color for the heading */
+}
+
+.overview-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #555; /* Lighter color for the paragraph */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.goal-title,
+.goal-description {
+color:red;
+}
+
+/* Ensure text aligns from right to left */
+.overview-title,
+.overview-description {
+color:red;
+}
+
+
+/* Style for the entire supported brands section */
+.supported-brands-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Container for the images */
+  .brand-container {
+    display: flex;
+    overflow: hidden; /* Hide anything that overflows the container */
+    width: 100%;
+    transition: transform 1s ease-in-out; /* Smooth sliding transition */
+  }
+  
+  /* Style for each individual brand image */
+  .brand-image {
+    min-width: 100%; /* Make each image take up full container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brand-image img {
+    max-height: 60px; /* Optional: adjust the height of the images */
+    object-fit: contain; /* Ensures the images maintain their aspect ratio */
+  }
+  
+  /* Optional: Add hover effect for brand images */
+  .brand-image img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease;
+  }
+
+ /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Collaborators Section */
+  .collaborators {
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for all collaborator cards */
+  .collaborator-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Individual Collaborator Card */
+  .collaborator-card {
+    width: 150px; /* Set the width to a larger value */
+    height: 150px; /* Set the height to match the width */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensures that the image stays inside the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* No background color */
+    border-radius: 10px; /* Add border-radius to the card */
+  }
+  
+  /* Image styles */
+  .collaborator-image {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 100%; /* Ensure the image takes up the full height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    opacity: 0.8; /* Set the initial opacity to create a fade effect */
+    transition: opacity 0.3s ease; /* Smooth fade transition */
+    border-radius: 10px; /* Add border-radius to the image */
+  }
+  
+  /* Hover effect on the image */
+  .collaborator-card:hover .collaborator-image {
+    opacity: 1; /* Make the image fully opaque on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .collaborator-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .collaborator-card {
+      width: 150px;  /* Adjust the size for smaller screens */
+      height: 150px;
+    }
+  }
+  
+  .card-body{
+height:310px;
+  }
