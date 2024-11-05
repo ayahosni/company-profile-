@@ -16,10 +16,49 @@
     left: 0;
 }
 
+
+
+
+/* Ensure the button has adequate styling */
+.hero-section {
+  position: relative;
+  overflow: hidden; /* Prevent overflow if needed */
+}
+
+.hero-video {
+  width: 100%;
+  height: 100vh; /* Make the video full screen */
+  object-fit: cover; /* Ensure the video covers the area */
+}
+
+.position-absolute {
+  z-index: 1;
+}
+
+.btn-info-outline {
+  border: 2px solid white; /* Border color */
+  color: white;
+  background-color: transparent;
+  font-size: 1.25rem;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button hover effect */
+.btn-info-outline:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
 .hero-section .text-center {
     z-index: 1;
 } 
-
+h1.display-4 {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); 
+  font-weight:bold;
+}
 
 /* Container for the heading and lines */
 .heading-wrapper {

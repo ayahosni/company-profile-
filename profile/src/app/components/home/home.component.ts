@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ContactComponent } from "../contact/contact.component";
 import{register} from 'swiper/element/bundle';
+import { RouterLink } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ContactComponent],
+  imports: [CommonModule, ContactComponent,RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
