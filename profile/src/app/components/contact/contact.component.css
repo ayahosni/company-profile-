@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background: #fafafa;
+    color: #333; /* lightened $black */
+}
+
+a {
+    transition: .3s all ease;
+    color: #1089ff; /* primary color */
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000; /* $black */
+}
+
+.bg-primary {
+    background: #1089ff !important; /* primary color */
+}
+
+.ftco-section {
+    padding: 7em 0;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+/* HEADING SECTION */
+.heading-section {
+    font-size: 28px;
+    color: #fff; /* $white */
+}
+
+.bg-hero {
+    position: relative;
+    z-index: 0;
+}
+
+.bg-hero:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000116;
+    opacity: .7;
+    z-index: -1;
+}
+
+/* COVER BG */
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.wrapper {
+    width: 100%;
+}
+
+.contact-wrap {
+    background: #fff; /* $white */
+    border-radius: 10px;
+}
+
+.info-wrap h3 {
+    color: #fff; /* $white */
+}
+
+.dbox {
+    width: 100%;
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 25px;
+}
+
+.dbox:last-child {
+    margin-bottom: 0;
+}
+
+.dbox p {
+    margin-bottom: 0;
+}
+
+.dbox p span {
+    font-weight: 400;
+    color: rgba(255, 255, 255, .4);
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.dbox p a {
+    color: rgba(255, 255, 255, .7);
+}
+
+.dbox .icon {
+    margin-top: 10px;
+}
+
+.dbox .icon span {
+    font-size: 24px;
+    color: #fff; /* $white */
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+
+
