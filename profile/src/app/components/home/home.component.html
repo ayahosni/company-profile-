@@ -68,7 +68,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card text-center">
                     <div class="card-body">
-                        <i class="fa fa-cogs fa-3x mb-3" style="color: #1089ff;"></i>
+                        <i class="fa fa-cogs fa-3x mb-3" style="color:red;"></i>
                         <h5 class="card-title">CONTENT AND DOCUMENT MANAGEMENT</h5>
                         <p class="card-text">Online content management, enterprise knowledgebase and document management solutions.</p>
                     </div>
@@ -79,7 +79,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card text-center">
                     <div class="card-body">
-                        <i class="fa fa-laptop fa-3x mb-3" style="color: #1089ff;"></i>
+                        <i class="fa fa-laptop fa-3x mb-3" style="color: red;"></i>
                         <h5 class="card-title">INTRANETS/EXTRANETS</h5>
                         <p class="card-text">Corporate portals, collaboration tools, corporate data repositories, document circulation, etc.</p>
                     </div>
@@ -90,7 +90,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card text-center">
                     <div class="card-body">
-                        <i class="fa fa-rocket fa-3x mb-3" style="color: #1089ff;"></i>
+                        <i class="fa fa-rocket fa-3x mb-3" style="color: red;"></i>
                         <h5 class="card-title">WORKFLOW MANAGEMEN</h5>
                         <p class="card-text">Business Process automation, planning and reporting tools, etc.</p>
                     </div>
@@ -101,7 +101,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card text-center">
                     <div class="card-body">
-                        <i class="fa-solid fa-puzzle-piece fa-3x mb-3" style="color: #1089ff;"></i>
+                        <i class="fa-solid fa-puzzle-piece fa-3x mb-3" style="color: red;"></i>
                         <h5 class="card-title">ENTERPRISE RESOURCES PLANNING</h5>
                         <p class="card-text">Enterprise Resource Planning (ERP) broadly refers to the Automation and
                             R	Integration of a company's core business, to help monitor, manage and control the company's resources, for effective and simplified success.
@@ -115,7 +115,7 @@
 
 
 
-<section class="collaborators">
+<!-- <section class="collaborators">
     <div class="container">
         <div class="heading-wrapper">
             <div class="line"></div>
@@ -130,7 +130,44 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+
+
+
+
+ 
+
+  <div class="container my-5">
+    <div class="row">
+
+        <div class="heading-wrapper my-5">
+            <div class="line"></div>
+            <h2 class="overview-heading">OUR SUPPORTED BRANDS</h2>
+            <div class="line"></div>
+        </div>
+      <swiper-container
+        [loop]="true"
+        [navigation]="true"
+        [autoplay]="{ delay: 5000, disableOnInteraction: false }"
+        [breakpoints]="breakpoints"
+      >
+        <swiper-slide *ngFor="let item of collaborators" class="slide">
+          <div class="card-wrapper">
+            <div class="card-container">
+              <img class="sliderImg" [src]="item.logo"  />
+            </div>
+          </div>
+
+          
+        </swiper-slide>
+        
+      </swiper-container>
+    </div>
+  </div>
+  
+  
+  
 
   <app-contact></app-contact>
   
