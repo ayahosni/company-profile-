@@ -1,1 +1,35 @@
-<p>customers works!</p>
+<div class="container-fluid">
+    <div class="row background-image-wrapper">
+      <div class="text-overlay">
+        <h2>OUR MAJOR CUSTOMERS</h2>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="heading-wrapper my-5">
+      <div class="line"></div>
+      <h2 class="overview-heading">CUSTOMERS</h2>
+      <div class="line"></div>
+    </div>
+    <swiper-container
+      [loop]="true"
+      [navigation]="true"
+      [autoplay]="{ delay: 5000, disableOnInteraction: false }"
+      [breakpoints]="breakpoints"
+    >
+      <swiper-slide *ngFor="let customer of customers" class="slide">
+        <div class="card" style="width: 18rem ; height: 20rem;">
+            <img class="card-img-top" [src]="customer.image" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">{{customer.description}}</p>
+            </div>
+          </div>
+        <div class="card-wrapper">
+          <div class="card-container">
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>
