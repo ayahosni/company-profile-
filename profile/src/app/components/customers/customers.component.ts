@@ -14,42 +14,47 @@ export class CustomersComponent {
   customers = [
     {
       name: 'Customer 1',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'This is a description for customer 1. They provide exceptional services.'
+      image: '../../../assets/images/customers/airline.jpeg', 
     },
     {
       name: 'Customer 2',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 2 specializes in high-quality products and customer satisfaction.'
+      image: '../../../assets/images/customers/alangari.jpeg', 
     },
     {
       name: 'Customer 3',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 3 is known for their innovative solutions and customer-first approach.'
+      image: '../../../assets/images/customers/ayaz.jpeg', 
     },
     {
       name: 'Customer 4',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 4 focuses on sustainable practices and excellence in service delivery.'
-    },{
-      name: 'Customer 1',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'This is a description for customer 1. They provide exceptional services.'
+      image: '../../../assets/images/customers/ayoti.jpeg', 
     },
     {
       name: 'Customer 2',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 2 specializes in high-quality products and customer satisfaction.'
+      image: '../../../assets/images/customers/bin shihon.jpeg', 
     },
     {
       name: 'Customer 3',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 3 is known for their innovative solutions and customer-first approach.'
+      image: '../../../assets/images/customers/fujitech.jpeg', 
     },
     {
       name: 'Customer 4',
-      image: '../../../assets/images/people-working-html-codes.jpg', 
-      description: 'Customer 4 focuses on sustainable practices and excellence in service delivery.'
+      image: '../../../assets/images/customers/hassan allam.jpeg', 
+    },
+    {
+      name: 'Customer 4',
+      image: '../../../assets/images/customers/snasco.jpeg', 
+    },
+    {
+      name: 'Customer 4',
+      image: '../../../assets/images/customers/health.jpeg', 
+    },
+    {
+      name: 'Customer 4',
+      image: '../../../assets/images/customers/moya.jpeg', 
+    },
+    {
+      name: 'Customer 4',
+      image: '../../../assets/images/customers/stc.jpeg', 
     }
   ];
 
@@ -57,8 +62,8 @@ export class CustomersComponent {
 
 
   breakpoints = {
-    0: { slidesPerView: 1.5, spaceBetween: 10 },
-    768: { slidesPerView: 4.2, spaceBetween: 10 }
+    0: { slidesPerView: 1.5, spaceBetween: 5 },
+    768: { slidesPerView: 5, spaceBetween: 5 }
   };
 
 

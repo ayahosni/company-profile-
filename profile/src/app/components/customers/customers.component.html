@@ -19,10 +19,9 @@
       [breakpoints]="breakpoints"
     >
       <swiper-slide *ngFor="let customer of customers" class="slide">
-        <div class="card" style="width: 18rem ; height: 20rem;">
-            <img class="card-img-top" [src]="customer.image" alt="Card image cap">
+        <div class="card" style="width: 13rem ; height: 15rem;">
+            <img class="card-img-top" [src]="customer.image" alt="Card image cap" [style.width.px]="180">
             <div class="card-body">
-              <p class="card-text">{{customer.description}}</p>
             </div>
           </div>
         <div class="card-wrapper">

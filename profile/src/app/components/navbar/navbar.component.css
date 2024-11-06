@@ -57,9 +57,13 @@ body {
 }
 
 .navbar-brand img {
-  height: 80px;
-  width: 200px;
+  height: 80px; 
+  max-height: 80px;
+  width: auto; 
+  max-width: 300px;
 }
+
+ 
 
 .ms-3 {
   margin-left: 1rem;

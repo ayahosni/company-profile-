@@ -133,36 +133,75 @@ color:red;
 
 /* Style for the entire supported brands section */
 .supported-brands-section {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  /* Container for the images */
-  .brand-container {
-    display: flex;
-    overflow: hidden; /* Hide anything that overflows the container */
-    width: 100%;
-    transition: transform 1s ease-in-out; /* Smooth sliding transition */
-  }
-  
-  /* Style for each individual brand image */
-  .brand-image {
-    min-width: 100%; /* Make each image take up full container width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .brand-image img {
-    max-height: 60px; /* Optional: adjust the height of the images */
-    object-fit: contain; /* Ensures the images maintain their aspect ratio */
-  }
-  
-  /* Optional: Add hover effect for brand images */
-  .brand-image img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    transition: transform 0.3s ease;
-  }
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Container for the images */
+.container {
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: #333;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.overview-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px; 
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Width of the card */
+  height: 120px; /* Height of the card - Make it square for the circular effect */
+  overflow: hidden; 
+  border-radius: 50%; /* Make the container circular */
+  transition: transform 0.3s ease;
+  background-color: #f8f8f8; /* Optional: Adds a background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+
+.sliderImg {
+  width: 100%; /* Set width to 60% of the card's width */
+  height: auto; /* Keep the aspect ratio */
+  max-height: 50%; /* Limit the height to maintain the circular effect */
+  border-radius: 20%; /* Make the image circular */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect to scale image and move it slightly upwards */
+.card-container:hover .sliderImg {
+  transform: scale(1.1) translateY(-5px); /* Scale slightly up */
+}
+
+
+
+
+
+
+
 
  /* General Styles */
 body {
@@ -193,27 +232,13 @@ body {
   }
   
   /* Container for all collaborator cards */
-  .collaborator-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
-  }
+ /* Container for all collaborator cards */
+
+
   
   /* Individual Collaborator Card */
-  .collaborator-card {
-    width: 150px; /* Set the width to a larger value */
-    height: 150px; /* Set the height to match the width */
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden; /* Ensures that the image stays inside the card */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent; /* No background color */
-    border-radius: 10px; /* Add border-radius to the card */
-  }
+ /* Individual Collaborator Card */
+
   
   /* Image styles */
   .collaborator-image {
@@ -235,39 +260,92 @@ body {
       flex-direction: column;
       align-items: center;
     }
-  
-    .collaborator-card {
-      width: 150px;  /* Adjust the size for smaller screens */
-      height: 150px;
-    }
+  /* Individual Collaborator Card */
+.collaborator-card {
+  width: 150px; /* Set the width to a larger value */
+  height: 150px; /* Set the height to match the width */
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden; /* Ensures that the image stays inside the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* No background color */
+  border-radius: 10px; /* Add border-radius to the card */
+  margin: 2px; 
+}
+
   }
   
+
+
+
   .card-body{
-height:310px;
+    height:310px;
+
+      overflow:visible;
+      padding: 20px; /* مسافة داخلية للكارد */
+      max-width: 100%; /* تمنع توسع الكارد عن حدود الحاوية */
+      box-sizing: border-box;
   }
 
+      
+    
+    
+    
+      .swiper-container {
+        width: 100%;
+        height: 300px; /* Adjust as needed */
+      }
+      
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+      }
+      
+      .sliderImg {
+        width: 100%; 
+        height: auto; /* Keep the aspect ratio */
+        max-height: 50%; /* Limit the height to maintain the circular effect */
+        border-radius: 20%; /* Make the image circular */
+        object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
+        transition: transform 0.3s ease;
+      }
+    
+     .swiper .swiper-button-next svg, .swiper .swiper-button-prev svg{
+        color:red;
+      }
+      .small-text {
+        font-size: 0.70em; 
+    }
+    .card-title {
+      font-size: 1.2em;
+      text-align: center;
+  }
+  
+  .card-text {
+      font-size: 0.9em; 
+      text-align: center;
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+  }
 
+  .hero-section {
+    position: relative;
+}
 
-  .swiper-container {
+.hero-image {
     width: 100%;
-    height: 300px; /* Adjust as needed */
-  }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ddd;
-  }
-  
-  .sliderImg {
-    border-radius: 5px;
-    width:250px;
-    height:250px;
-  }
+    height: auto;
+}
 
- .swiper .swiper-button-next svg, .swiper .swiper-button-prev svg{
-    color:red;
-  }
-  
-  
+.text-overlay {
+    animation: fadeInOut 4s infinite; 
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; } 
+    50% { opacity: 1; } 
+}

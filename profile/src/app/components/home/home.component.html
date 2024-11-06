@@ -1,13 +1,17 @@
+<!-- hero-section.component.html -->
 <section class="hero-section position-relative">
-    <video  autoplay muted loop playsinline class="hero-video">
-        <source src="../../../assets/videos/7989443-hd_1920_1080_25fps.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="../../../assets/images/pexels-field-engineer-147254-442150.jpg" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-        <h1 class="display-4">WELCOME TO NCIT</h1>
+        <h1 class="display-4">
+            <span #typedText></span>
+        </h1>
         <button class="btn btn-info-outline my-5" [routerLink]="['/service']">GO TO SERVICES</button>
     </div>
 </section>
+
 
 <section class="goals-section">
     <div class="container my-5">
@@ -44,10 +48,11 @@
 
             <div class="col-md-6 text-column d-flex flex-column justify-content-center my-5">
                 <h3 class="overview-title">COMPANY OVERVIEW</h3>
-                <h4 class="overview-description text-muted">Network Consultant for IT Integrated Solutions (NCIT) is well known for the quality of services and range of Solutions. Network Consultant ITS has the most professional and solid Technical Services Team. To provide direct assistance on technical issues and Con­ sultation, we offer quick and accurate support and consultancy for our Integrated Services.
-                    Network Consultant in IT and communication was 9 years old within this short period became a partner with F-Secure & Lepide & ITC also become a dominant force with greater coverage in the Kingdom.
+                <h4 class="overview-description text-muted">Network Consultant for IT Integrated Solutions (NCIT) is well known for the quality of services and range of solutions. Network Consultant ITS has the most professional and solid Technical Services Team. To provide direct assistance on technical issues and consultation, we offer quick and accurate support and consultancy for our Integrated Services.
+
+                    Founded in 2013, Network Consultant in IT and communication has, within a short period, become a partner with F-Secure, Lepide, and ITC, establishing itself as a dominant force with extensive coverage in the Kingdom.
                     
-                    We offer Competitive price for Solution Providing, Competitive Price for Hardware Supply and Installation, Solution Customization Per Request, Competitive Maintenance Charges and Strong Warranty and Technical Support.</h4>
+                    We offer competitive pricing for solution provision, hardware supply and installation, solution customization per request, competitive maintenance charges, and strong warranty and technical support.</h4>
             </div>
         </div>
     </div>
@@ -101,11 +106,12 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card text-center">
                     <div class="card-body">
-                        <i class="fa-solid fa-puzzle-piece fa-3x mb-3" style="color: red;"></i>
-                        <h5 class="card-title">ENTERPRISE RESOURCES PLANNING</h5>
-                        <p class="card-text">Enterprise Resource Planning (ERP) broadly refers to the Automation and
-                            R	Integration of a company's core business, to help monitor, manage and control the company's resources, for effective and simplified success.
-    </p>
+               <i class="fa-solid fa-puzzle-piece fa-3x mb-3" style="color: red;"></i>
+<h5 class="card-title">ENTERPRISE RESOURCES PLANNING (<span class="small-text">Odoo, Microsoft AX, Oracle</span>)</h5>
+<p class="card-text">
+    Enterprise Resource Planning (ERP) broadly refers to the Automation and Integration of a company's core business, to help monitor, manage and control the company's resources, for effective and simplified success.
+</p>
+
                     </div>
                 </div>
             </div>
@@ -132,9 +138,9 @@
         [breakpoints]="breakpoints"
       >
         <swiper-slide *ngFor="let item of collaborators" class="slide">
-          <div class="card-wrapper">
-            <div class="card-container">
-              <img class="sliderImg" [src]="item.logo"  />
+            <div class="card-wrapper" style="display: flex; justify-content: center; align-items: center; padding: 2px;"> 
+                <div class="card-container" style="display: flex; justify-content: center; align-items: center; width: 200px; height: 120px; overflow: hidden; border-radius: 50%; transition: transform 0.3s ease; background-color: #f8f8f8; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img class="sliderImg" [src]="item.logo" [style.width.px]="180" />
             </div>
           </div>
 
